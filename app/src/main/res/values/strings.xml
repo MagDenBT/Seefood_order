@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeeFood order</string>
+    <string name="prime">Prime</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+</resources>

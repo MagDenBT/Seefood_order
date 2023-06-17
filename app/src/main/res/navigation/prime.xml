@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prime_graph"
+    app:startDestination="@id/primeFragment">
+
+    <fragment
+        android:id="@+id/primeFragment"
+        android:name="ch.magdenbt.seefoodjyordertakingapp.presentations.prime.PrimeFragment"
+        tools:layout="@layout/fragment_prime" >
+        <action
+            android:id="@+id/action_primeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="ch.magdenbt.seefoodjyordertakingapp.presentations.category.CategoryFragment"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="ch.magdenbt.seefoodjyordertakingapp.presentations.product.ProductFragment"
+        tools:layout="@layout/fragment_product" />
+</navigation>

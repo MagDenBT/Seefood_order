@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">СмориПродукты заказ блюд</string>
+    <string name="screen_account">Аккаунт</string>
+    <string name="prime">Prime</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+</resources>

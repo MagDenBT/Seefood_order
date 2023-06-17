@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/prime"
+        android:id="@+id/prime"
+        android:icon="@drawable/ic_prime"/>
+    <item android:title="@string/cart"
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"/>
+    <item android:title="@string/search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"/>
+    <item android:title="@string/account"
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"/>
+</menu>
