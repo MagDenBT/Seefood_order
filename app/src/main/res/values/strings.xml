@@ -4,4 +4,7 @@
     <string name="cart">Cart</string>
     <string name="search">Search</string>
     <string name="account">Account</string>
+    <string name="prev_city_text">Санкт-Петербург</string>
+    <string name="prev_date_text">12 Августа, 2023</string>
+    <string name="prev_cuisine_item_text">Пекарни и кондитерские</string>
 </resources>

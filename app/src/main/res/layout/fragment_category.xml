@@ -7,4 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".presentations.category.CategoryFragment">
 
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/categoryTabs"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@id/categoryTabs"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

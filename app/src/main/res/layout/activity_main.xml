@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +8,66 @@
     tools:context=".presentations.MainActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
+
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/geoAndDateGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/gpsIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_gps_balloon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="@tools:sample/cities"
+                app:layout_constraintStart_toEndOf="@+id/gpsIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="4dp"/>
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:text="@string/prev_date_text"
+                app:layout_constraintStart_toStartOf="@+id/cityText"
+                app:layout_constraintTop_toBottomOf="@+id/cityText"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatarIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            tools:src="@tools:sample/avatars"
+            android:layout_gravity="end"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Image.PILL"/>
 
 
     </com.google.android.material.appbar.MaterialToolbar>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

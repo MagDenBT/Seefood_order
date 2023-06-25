@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="round_corner_TEST">40dp</dimen>
+    <dimen name="round_corner_large">10dp</dimen>
+    <dimen name="round_corner_medium">8dp</dimen>
+    <dimen name="round_corner_small">6dp</dimen>
+</resources>
